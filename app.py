@@ -49,7 +49,6 @@ def chat():
         return jsonify({"reply": response.text})
         
     except Exception as e:
-        # If there is an error (like a wrong API key), print it to the screen so we can debug
         return jsonify({"reply": f"System Error: {str(e)}"}), 500
 
 if __name__ == "__main__":
